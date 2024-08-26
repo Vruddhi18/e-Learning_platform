@@ -1,0 +1,87 @@
+<div>
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bootstrap.rtl.css" />
+  <title>enroll</title>
+  <div className="container">
+    <nav className="navbar navbar-expand-lg fixed-top bg-success" style={{color: 'wheat'}}>
+      <div className="container">
+        <a className="navbar-brand active" href="home.html" style={{marginRight: 70, fontFamily: 'cursive', fontSize: 'x-large', color: 'wheat'}}>
+          <img src="mainlogo.png" width="50px" height="50px" style={{marginRight: 20, filter: 'invert(85%)'}} alt="Learnera" />Learnera</a>
+        <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#de">
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="de">
+          <ul className="navbar-nav" style={{alignContent: 'flex-end', marginLeft: 550}}>
+            <li className="nav-item dropdown">
+              <a href="courses.html" data-bs-toggle="dropdown" className="nav-link" style={{color: 'wheat'}}>Courses
+              </a>
+              <ul className="dropdown-menu">
+                <li className="nav-item"><a href="courses.html" className="nav-link">Java</a></li>
+                <li className="nav-item"><a href="courses.html" className="nav-link ">Python</a></li>
+                <li className="nav-item"> <a href="courses.html" className="nav-link">MySQL</a></li>
+                <li className="nav-item"> <a href="courses.html" className="nav-link">Javascript</a></li>
+              </ul>
+            </li>
+            <li className="nav-item">
+              <form className="navbar-form navbar-left" action="#">
+                <div className="form-group">
+                  <input type="text" className="form-control" placeholder="Search Courses" />
+                </div>
+              </form>
+            </li>
+            <li className="nav-item">
+              {/* <a href="signup.html" data-bs-toggle="modal" class="nav-link" style="color: wheat;">Sign in</a> */}
+              <a href="signup.html" className="nav-link" style={{color: 'wheat'}}>Login</a>
+            </li>
+            <a href="demo.html"><input type="button" className="btn text-success" style={{backgroundColor: 'wheat', border: '1px solid green', padding: 5}} defaultValue="Free Trial" /></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div><br /><br /><br /><br /><br /><br />
+  <h1 style={{marginLeft: 100}}>Checkout</h1>
+  <div className="row">
+    <div className="col-6" height="200px" width="500px" style={{border: '1px solid rgb(109, 109, 109)', marginLeft: 100, marginRight: 100, float: 'left'}}>
+      <h5 style={{color: 'rgb(67, 67, 59)', backgroundColor: 'ghostwhite'}} align="center">Premium Plan!</h5>
+      <hr />
+      <h1 align="center"><i> Rs.1250</i></h1>
+      <hr />
+      <p style={{textAlign: 'left'}}>
+      </p><h2>It includes:</h2>
+      <ul style={{color: 'green', fontSize: 'larger'}}>
+        <li> Real-world projects <br /></li>
+        <li> All courses <br /></li>
+        <li>Skill paths <br /></li>
+        <li>Career paths <br /></li>
+        <li>Technical interview prep Code challenges <br /></li>
+        <li>Professional certifications <br /></li>
+        <li>Career services <br /></li>
+        <li>Assessments <br /></li>
+      </ul>
+      <p />
+      <button className="btn bg-success" style={{color: 'wheat', marginBottom: 10}}>Checkout</button>
+    </div>
+    <div className="col-4" style={{float: 'right', border: '1px solid white'}}>
+      <img src="checkout.png" alt />
+    </div>
+  </div>
+  <br />
+  <footer>
+    <div style={{backgroundColor: 'rgb(1, 54, 10)', color: 'black', height: 100}}>
+      <div style={{paddingTop: 20}} align="center">
+        <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="yt.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+        <a href="https://www.facebook.com/" target="_blank"> <img src="fb.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+        <p style={{marginRight: 10, color: 'wheat'}}>
+          <a href="#" style={{color: 'wheat'}}>Terms and conditions|</a>
+          <a href="#" style={{color: 'wheat'}}>Privacy</a><br />
+          © 2023 Learnera Inc. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>

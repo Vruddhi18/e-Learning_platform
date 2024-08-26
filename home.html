@@ -1,0 +1,238 @@
+<div>
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+     */}
+  <link rel="stylesheet" href="bootstrap.rtl.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Learnera</title>
+  <style dangerouslySetInnerHTML={{__html: "\n        * {\n            /* background-color:white;\n            color: black; */\n            margin-left: 0px;\n            margin-right: 0px;\n        }\n    " }} />
+  <div className="container">
+    {/* navbar */}
+    <nav className="navbar navbar-expand-lg fixed-top bg-success" style={{color: 'wheat'}}>
+      <div className="container">
+        <a className="navbar-brand active" href="#" style={{marginRight: 70, fontFamily: 'cursive', fontSize: 'x-large', color: 'wheat'}}>
+          <img src="mainlogo.png" width="50px" height="50px" style={{marginRight: 20, filter: 'invert(85%)'}} alt />Learnera</a>
+        <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#de">
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="de">
+          <ul className="nav navbar-nav" style={{alignContent: 'flex-end', marginLeft: 550}}>
+            <li className="nav-item dropdown">
+              <a href="#courses" data-bs-toggle="dropdown" className="nav-link" style={{color: 'wheat'}}>Courses
+              </a>
+              <ul className="dropdown-menu">
+                <li className="nav-item"><a href="#courses" className="nav-link">Java</a></li>
+                <li className="nav-item"><a href="#courses" className="nav-link ">Python</a></li>
+                <li className="nav-item"> <a href="#courses" className="nav-link">MySQL</a></li>
+                <li className="nav-item"> <a href="#courses" className="nav-link">Javascript</a></li>
+              </ul>
+            </li>
+            <li className="nav-item">
+              <form className="navbar-form navbar-left" action="#">
+                <div className="form-group">
+                  <input type="text" className="form-control" placeholder="Search Courses" />
+                </div>
+              </form>
+            </li>
+            <li className="nav-item">
+              {/* <a href="signup.html" data-bs-toggle="modal" class="nav-link" style="color: wheat;">Sign
+                          in</a> */}
+              <a href="signup.html" className="nav-link" style={{color: 'wheat'}}>Login</a>
+            </li>
+            <li className="nav-item">
+              <a href="demo.html"><input type="button" className="btn text-success" style={{backgroundColor: 'wheat', border: '1px solid green', padding: 5}} defaultValue="Free Trial" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div className="row" style={{paddingTop: 100}}>
+      <div className="col-6" align="left">
+        <p style={{fontSize: 70, fontFamily: '"Times New Roman", Times, serif', color: 'rgb(51, 51, 51)'}}>
+          Interactive online coding classes for at-home learning.</p>
+        <a href="demo.html"><input type="button" className="btn bg-success" style={{color: 'wheat', border: '1px solid green', padding: 10}} defaultValue="Try Demo for free" /></a>
+      </div>
+      <div className="col-6" align="right">
+        <img src="main.jpg" alt="sorry" height="500px" />
+      </div>
+    </div>
+    <br /><br />
+    {/* blog section */}
+    <h1 align="center" style={{fontFamily: 'cursive', color: 'rgb(1, 54, 10)'}}>Why Learnera?</h1>
+    <hr width="50%" style={{marginLeft: 350}} />
+    <div className="row">
+      <div className="col">
+        <img src="1.jpg" alt={1} height="200px" style={{float: 'left'}} />
+        <p style={{float: 'right'}}>
+        </p><h4>Expert-led video courses for beginners and other skill levels</h4>
+        Find all the instructions you need to get an entry-level job in tech, even if you’ve never coded. Not a
+        beginner? Test out of subjects you already know with Compass.
+        <p />
+      </div>
+      <div className="col">
+        <img src="2.jpg" alt={2} height="200px" style={{float: 'left', border: '1px white'}} />
+        <p style={{float: 'right'}}>
+        </p><h4>In-demand topics for Developers and Designers</h4>
+        Stay up to date with your skills. Learn the languages, frameworks, and principles required for the most
+        in-demand careers in tech.
+        <p />
+      </div>
+    </div>
+    <hr />
+    <div className="row">
+      <div className="col">
+        <img src="3.jpg" alt={3} height="200px" style={{float: 'left'}} />
+        <p style={{float: 'right'}}>
+        </p><h4>Segment your learning with Tracks</h4>
+        Each of our Tracks is a mini-program designed to teach you a particular set of skills. Need to learn a
+        new skill set? Enroll in a Track, and your learning path is all mapped out.
+        <p />
+      </div>
+      <div className="col">
+        <img src="4.jpg" alt={4} height="200px" style={{float: 'left'}} />
+        <p style={{float: 'right'}}>
+        </p><h4>Interactive learning</h4>
+        Our courses have quizzes and code challenges to keep you engaged—because the best way to learn is by
+        practicing.
+        <p />
+      </div>
+    </div> <br /><br />
+    {/* courses section */}
+    <div id="courses">
+      <h1 align="center" style={{fontFamily: 'cursive', color: 'rgb(1, 54, 10)'}}>Pick A Course To Get Started</h1>
+      <hr width="60%" style={{marginLeft: 280}} />
+      <div className="row">
+        <div className="col" style={{marginRight: 250, border: '1px solid beige', borderRadius: 30, backgroundColor: 'beige'}}>
+          <img src="java.svg" alt="JAVA" height="100px" width="200px" style={{marginLeft: 150}} />
+          <h3 align="center" style={{color: 'rgb(1, 46, 1)', fontFamily: 'monospace'}}>JAVA</h3>
+          <p align="center" style={{color: 'darkolivegreen'}}>Take your first step towards a career in software
+            development with this introduction to Java—one of the most in-demand programming languages and
+            the foundation of the Android operating system</p>
+          <a href="courses.html"><button className="btn bg-success btn-sm" style={{color: 'wheat', marginLeft: 200, marginBottom: 10}}>Enroll now</button></a>
+        </div>
+        <div className="col" style={{border: '1px solid wheat', borderRadius: 30, backgroundColor: 'beige'}}>
+          <img src="python.svg" alt="PYTHON" height="100px" width="200px" style={{marginLeft: 150}} />
+          <h3 align="center" style={{color: 'rgb(1, 46, 1)', fontFamily: 'monospace'}}>PYTHON</h3>
+          <p align="center" style={{color: 'darkolivegreen'}}>learn to Program and Analyze Data with Python.
+            Develop programs to gather, clean, analyze, and visualize data.</p>
+          <a href="checkout.html"><button className="btn bg-success btn-sm" style={{color: 'wheat', marginLeft: 200, marginBottom: 10}}>Enroll now</button></a>
+        </div>
+      </div>
+      <br /><br />
+      <div className="row">
+        <div className="col" style={{marginRight: 250, border: '1px solid wheat', borderRadius: 30, backgroundColor: 'beige'}}>
+          <img src="mysql.svg" alt="sql" height="100px" width="200px" style={{marginLeft: 150}} />
+          <h3 align="center" style={{color: 'rgb(1, 46, 1)', fontFamily: 'monospace'}}>SQL</h3>
+          <p align="center" style={{color: 'darkolivegreen'}}>
+            Structured Query Language (SQL) is a standardized language for storing, manipulating and
+            retrieving data in databases.</p>
+          <a href="checkout.html"><button className="btn bg-success btn-sm" style={{color: 'wheat', marginLeft: 200, marginBottom: 10}}>Enroll now</button></a>
+        </div>
+        <div className="col" style={{border: '1px solid wheat', borderRadius: 30, backgroundColor: 'beige'}}>
+          <img src="javascript_logo.svg" alt="Javascript" height="100px" width="200px" style={{marginLeft: 150}} />
+          <h3 align="center" style={{color: 'rgb(1, 46, 1)', fontFamily: 'monospace'}}>JAVASCRIPT</h3>
+          <p align="center" style={{color: 'darkolivegreen'}}>Build Your Skills in JavaScript and jQuery. Start a
+            journey to using JavaScript to become a programmer.
+          </p>
+          <a href="checkout.html"><button className="btn bg-success btn-sm" style={{color: 'wheat', marginLeft: 200, marginBottom: 10}}>Enroll now</button></a>
+        </div>
+      </div>
+      <br />
+      <a href="courses.html" style={{color: 'rgb(1, 54, 10)', paddingLeft: 500, fontSize: 30, textDecoration: 'none'}}>Explore More
+        Courses</a>
+    </div>
+    <br /><br />
+    {/* our recruiters */}
+    <h1 align="center" style={{fontFamily: 'cursive', color: 'rgb(1, 54, 10)'}}>Our Recruiters</h1>
+    <hr width="50%" style={{marginLeft: 300}} />
+    <img src="com.jpg" width="1400px" />
+    <br /><br />
+    {/* Success Stories carousel */}
+    <h1 align="center" style={{fontFamily: 'cursive', color: 'rgb(1, 54, 10)'}}>Success Stories</h1>
+    <hr width="50%" style={{marginLeft: 300}} />
+    <div className="carousel slide" data-bs-ride="carousel" id="demo">
+      <div className="carousel-indicators" style={{backgroundColor: 'beige'}}>
+        <button className="btn active" data-bs-target="#demo" data-bs-slide-to={0} />
+        {/* if used <a > tag then use href instead of data-bs-target */}
+        <button className="btn" data-bs-target="#demo" data-bs-slide-to={1} />
+        <button className="btn" data-bs-target="#demo" data-bs-slide-to={2} />
+        <button className="btn" data-bs-target="#demo" data-bs-slide-to={3} />
+      </div>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <div className="card" height="200px" align="center" width="50%" style={{color: 'rgb(1, 54, 10)', backgroundColor: 'beige'}}>
+            <img src="g2.jpg" alt="Recipe 1" height="150px" width="150px" style={{marginLeft: 570, borderRadius: '60%'}} />
+            <div className="card-body" width="20%">
+              <h4 className="card-title">Sophia says...</h4>
+              <p className="card-text">"Thank you very much for this course. I learned a lot of interesting
+                things for myself, and the knowledge that I received in this course was useful in the
+                projects that I worked on. I'm already watching your course on multithreading in C++ and
+                I'm also quite satisfied. Thank you for the quality content and your support during the
+                course.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <div className="card" height="200px" align="center" width="50%" style={{color: 'rgb(1, 54, 10)', backgroundColor: 'beige'}}>
+            <img src="b2.jpg" alt="Recipe 1" height="150px" width="150px" style={{marginLeft: 570, borderRadius: '60%'}} />
+            <div className="card-body" width="20%">
+              <h4 className="card-title">John Says...</h4>
+              <p className="card-text">" Amazing course little patience and u will learn more than 99% of the
+                people who haven't watch this course. This course really sets the base of coding good.
+                Instructor explains every concept from the start and in a articulate way."</p>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <div className="card" height="200px" align="center" width="50%" style={{color: 'rgb(1, 54, 10)', backgroundColor: 'beige'}}>
+            <img src="g1.jpg" alt="Recipe 1" height="150px" width="150px" style={{marginLeft: 570, borderRadius: '60%'}} />
+            <div className="card-body" width="20%">
+              <h4 className="card-title">Emily Says...</h4>
+              <p className="card-text">"The course was Amazing and the way of Jonas teaching is outstanding
+                and understandable,and I like the coding problem and the hard to grasp topics like how
+                Js works and async Js instruct very well. thank you for such an amazing course on
+                JavaScript"</p>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <div className="card" height="200px" align="center" width="50%" style={{color: 'rgb(1, 54, 10)', backgroundColor: 'beige'}}>
+            <img src="b1.jpg" alt="Recipe 1" height="150px" width="150px" style={{marginLeft: 570, borderRadius: '60%'}} />
+            <div className="card-body" width="20%">
+              <h4 className="card-title">Michael Says...</h4>
+              <p className="card-text">"This is fantastic course. From very basic to all the advance topics -
+                it covers almost everything. I am glad to take this course. Before taking the course I
+                knew nothing about SQL and now I am confident to writing the queries on my own."
+              </p><p>
+              </p></div>
+          </div>
+        </div>
+      </div><br /><br />
+      <button className="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" style={{backgroundColor: 'rgb(1, 54, 10)'}} />
+      </button>
+      <button className="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+        <span className="carousel-control-next-icon" style={{backgroundColor: 'rgb(1, 54, 10)'}} />
+      </button>
+    </div>
+  </div>
+  <hr />
+  {/* footer part */}
+  <div style={{backgroundColor: 'rgb(1, 54, 10)', color: 'black', height: 100}}>
+    <div style={{paddingTop: 20}} align="center">
+      <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="yt.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+      <a href="https://www.facebook.com/" target="_blank"> <img src="fb.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" height="30px" width="30px" style={{marginRight: 20}} /></a>
+      <p style={{marginRight: 10, color: 'wheat'}}>
+        <a href="#" style={{color: 'wheat'}}>Terms and conditions|</a>
+        <a href="#" style={{color: 'wheat'}}>Privacy</a><br />
+        © 2023 Learnera Inc. All rights reserved.
+      </p>
+    </div>
+  </div>
+</div>

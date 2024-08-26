@@ -1,0 +1,20 @@
+.course-listing {
+	margin-top: 30px;
+}
+body{
+	background-color: black;
+}
+.course-listing img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.course-listing h2 {
+	margin-top: 0;
+}
+
+.course-listing p {
+	margin-bottom: 10px;
+}
+

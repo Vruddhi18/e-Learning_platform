@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn and SignUp Learnera</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" href="bootstrap.rtl.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg fixed-top bg-success" style="color: wheat;">
+        <div class="container">
+            <a class="navbar-brand active" href="home.html"
+                style="margin-right: 70px;font-family: cursive;font-size:x-large; color: wheat;">
+                <img src="mainlogo.png" width="50px" height="50px" style="margin-right: 20px;filter: invert(85%);"
+                    alt="">Learnera</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#de">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="de">
+                <ul class="nav navbar-nav" style="align-content: flex-end; margin-left: 550px;">
+                    <li class="nav-item dropdown">
+                        <a href="#courses" data-bs-toggle="dropdown" class="nav-link" style="color: wheat;">Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="courses.html" class="nav-link">Java</a></li>
+                            <li class="nav-item"><a href="courses.html" class="nav-link ">Python</a></li>
+                            <li class="nav-item"> <a href="courses.html" class="nav-link">MySQL</a></li>
+                            <li class="nav-item"> <a href="courses.html" class="nav-link">Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <form class="navbar-form navbar-left" action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search Courses">
+                            </div>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" data-bs-toggle="modal" class="nav-link" style="color: wheat;">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="demo.html"><input type="button" class="btn text-success"
+                                style="background-color: wheat; border:1px solid green; padding: 5px;"
+                                value="Free Trial"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="box">
+        <a href="#" style="font-family:cursive;font-size:x-large;color: wheat;  text-decoration: none;
+        ">Learnera</a>
+        <div class="page">
+            <div class="header">
+                <a id="login" class="active" href="#login">login</a>
+                <a id="signup" href="#signup">signup</a>
+            </div>
+            <div id="errorMsg"></div>
+            <div class="content">
+                <form class="login" name="loginForm" onsubmit="return validateLoginForm()" method="POST">
+                    <input type="text" name="name" id="logName" placeholder="Username">
+                    <input type="password" name="password" id="logPassword" placeholder="Password">
+                    <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Login">
+                    <a href="#">Forgot Password?</a>
+                </form>
+                <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
+                    <input type="email" name="email" id="signEmail" placeholder="Email">
+                    <input type="text" name="name" id="signName" placeholder="Username">
+                    <input type="password" name="password" id="signPassword" placeholder="Password"><br>
+                    <input type="submit" value="SignUp">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+    <br>
+        <!-- footer part -->
+        <div style="background-color: rgb(1, 54, 10);color: black; height: 100px;">
+            <div style="padding-top: 20px;" align="center">
+                <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" height="30px" width="30px"
+                        style="margin-right: 20px;"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="yt.png" height="30px" width="30px"
+                        style="margin-right: 20px;"></a>
+                <a href="https://www.facebook.com/" target="_blank"> <img src="fb.png" height="30px" width="30px"
+                        style="margin-right: 20px;"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" height="30px" width="30px"
+                        style="margin-right: 20px;"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" height="30px" width="30px"
+                        style="margin-right: 20px;"></a>
+                <p style="margin-right: 10px; color: wheat;">
+                    <a href="#" style="color: wheat;">Terms and conditions|</a>
+                    <a href="#" style="color: wheat;">Privacy</a><br>
+                    © 2023 Learnera Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+</body>
